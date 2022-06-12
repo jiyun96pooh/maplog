@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPLOG_mymap</title>
+    <link rel="stylesheet" href="../css/basic.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../home.html"><h1>MAPLOG</h1></a>
+        </div>
+        <ul class="main_top">
+            <li><a href="../friendsmap.html">[ Friend's map ]</a></li>
+            <li><a href="../home.html">[ Home ]</a></li>
+            <li><a href="../mymap.html">[ My map ]</a></li>
+        </ul>
+        <ul class="main_login">
+            <li><a href="../home.html">[ logout ] </a></li>
+        </ul>
+    </header>
+
+    <main>
+        
+        <div class="row">
+            <div class="left">
+                <ul>
+                    <li>
+                        <h1 class="title">
+                        [ LP맛집 푸딩맛집 이태원, 힐즈앤유로파 ]
+                        </h1>
+                    </li>
+                    <p class="place"><a href="http://kko.to/Im-7REI_g">힐즈앤유로파 (서울 용산구 신흥로 35 2층9)</a></p>
+                    <br>
+                    <!-- thumnail / place / user / Date 시작-->
+                    <li><a href="#"><img src="../images/6.jpg" alt="메인01" width="400"></a></li>
+                    
+                    <p class="user">
+                        @ppung2:
+                        <script>
+                            var a = new Date();
+                            document.write(a.toDateString());
+                        </script>
+                    </p><br><br>
+                    <!-- thumnail / user / Date 끝-->
+                    <hr width="70%" color="00a621">
+                    <h2>추천이유</h2>
+                    <p>
+                        친구추천으로 간 LP바<br>
+                        갑자기 careless whisper가 나와서 취향저격해버렸다...<br>
+                        게다가 푸딩맛집 ! 진짜 인당 하나씩 주문해야되는거 잊지마세요.
+                    </p>
+                    <hr width="70%" color="00a621"><br><br>
+
+                    <!-- 포스팅 내용_ 시작 -->
+                    <li><a href="#"><img src="../images/6_2.jpg" alt="메인01" width="400"></a></li>
+                    <p>
+                        저녁에 갈 거면 무조건 예약하고 가는 거 추천드려요.<br>
+                        브레이크 타임 이후 저녁에 워크인으로 갈려면<br>
+                        오픈 전 부터 서있어야 됩니다.
+                    </p>
+                    <li><a href="#"><img src="../images/6_3.jpg" alt="메인01" width="400"></a></li>
+                    <p>
+                        다들 푸딩맛집이라길래 얼마나 맛있길래<br>
+                        호들갑인가... 생각했다...<br>
+                        먹어보니 진짜 푸딩맛집...<br>
+                        저녁에는 아마 메인 시켜야 디저트 주문이 가능하니<br>
+                        가볍게 푸딩만 맛보려면 점심에 가야되는거 잊지마세요!!
+                    <!-- 포스팅 내용_ 끝 -->
+                    <hr width="70%" color="00a621">
+                    <h2>MAP</h2>
+                    <a href="https://map.kakao.com/?urlX=497152&urlY=1122815&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank">
+                    <img width="504" height="310" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=497152&MY=1122815&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc">
+                    </a><p class="mapName">-힐즈앤유로파-</p>
+
+                </ul>
+            </div>
+            <div class="right">
+                <br>
+                <ul>
+                    <li><a href="post_main.html">-[MAPLOG] 기분전환하기 좋은 공원 BEST 3</a></li><br><br>
+                    <li><a href="post_01.html">-[ 벚꽃맛집! 화개장터/광한루 ]</a></li><br><br>
+                    <li><a href="post_02.html">-[ 성수동 블루보틀 ]</a></li><br><br>
+                    <li><a href="post_03.html">-[ 인증샷찍기 좋은 부산 감천문화마을 ]</a></li><br><br>
+                    <li><a href="post_04.html">-[ 감성있는 노들섬, 모르면 손해 ]</a></li><br><br>
+                    <li><a href="post_05.html">-[ 뛰기 싫어하는 나도 뛰고 싶은 잠수교 ]</a></li><br><br>
+                    <li><a href="post_06.html">-[ LP맛집 푸딩맛집 이태원, 힐즈앤유로파 ]</a></li><br><br>
+                </ul>
+            
+            
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        HYCU 2022 FINAL PROJECTS
+    </footer>
+
+</body>
+</html>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bf649adff85263596cb8e6a5e90f4905"></script>
+<script>
+var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+</script>

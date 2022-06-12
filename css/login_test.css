@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  /* font-family: "Noto Sans KR", sans-serif; */
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  background-color: #00a621;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.logo {
+  color: #ffffff;
+  text-align: center;
+  border: none;
+}
+
+.login-form {
+  width: 300px;
+  background-color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  border: none;
+}
+
+.text-field {
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  /*border에 논을 아예 안주면 굵은 검정테두리가 생김.*/
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  font-size: 14px;
+  border: none;
+  padding: 10px;
+  width: 260px;
+  background-color: #00a621;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  font-size: 12px;
+  color: #9b9b9b;
+}
